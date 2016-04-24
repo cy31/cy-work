@@ -1,0 +1,26 @@
+group 'cy'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile(
+            "org.springframework:spring-context:4.0.5.RELEASE",
+            "org.springframework:spring-web:4.0.5.RELEASE",
+            "org.springframework:spring-webmvc:4.0.5.RELEASE"
+    )
+    testCompile("org.springframework:spring-test:4.0.5.RELEASE")
+    runtime("jstl:jstl:1.2")
+}
+
+task copyJars(type: Copy) {
+    from configurations.runtime
+    into 'lib' // 目标位置
+}

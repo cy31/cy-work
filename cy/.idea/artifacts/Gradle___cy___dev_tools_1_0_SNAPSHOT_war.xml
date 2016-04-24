@@ -1,0 +1,32 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Gradle : cy : dev-tools-1.0-SNAPSHOT.war">
+    <output-path>$PROJECT_DIR$/out/artifacts/dev-tools</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$/dev-tools" />
+    </properties>
+    <root id="archive" name="dev-tools-1.0-SNAPSHOT.war">
+      <element id="javaee-facet-resources" facet="dev-tools_main/web/Web Gradle : dev-tools-1.0-SNAPSHOT.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="dev-tools_main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/dev-tools/build/resources/main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context:4.0.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-web:4.0.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:4.0.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.0.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-beans:4.0.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: jstl:jstl:1.2" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-core:4.0.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-expression:4.0.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: aopalliance:aopalliance:1.0" />
+          <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.1.3" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/dev-tools/exploded/dev-tools-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
